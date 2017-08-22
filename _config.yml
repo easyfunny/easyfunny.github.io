@@ -1,4 +1,107 @@
-titile: 2the.top
-subtitile: Blog
-theme: jekyll-theme-modernist
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://blog.2the.top
+date_format: "ordinal"
+title: 2 The Top
+subtitle: "Blog"
+description: "An interesting blog site"
+keywords: 2thetop, tothetop, 2the, blog
+favicon: /favicon.ico
 timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: EasyFunny
+organization: 2the.top
+organization_url: http://blog.2the.top
+github_username: easyfunny
+location: Wuhan, China
+email: 
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /categories/
+    label: Categories
+
+  -
+    href: /wiki/
+    label: Wiki
+
+  -
+    href: /links/
+    label: Links
+
+  -
+    href: /about/
+    label: About
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: easyfunny/easyfunny.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment
+comments_provider: gitment
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: easyfunny
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: easyfunny
+    repo: blog-comments
+    oauth:
+        client_id: 2517a61083e6c28782b8
+        client_secret: ab1d48746bd0bdd421fd6f450986ffd0a22a88b6
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-105088681-1
