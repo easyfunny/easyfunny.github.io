@@ -9,6 +9,6 @@ keywords: 吉他谱 活着 郝云
 # {{ page.title }}
 
 
-<img src="/images/blog/guitar/活着1.png"/></br>
-<img src="/images/blog/guitar/活着2.png"/></br>
-<img src="/images/blog/guitar/活着3.png"/></br>
+<img src="/images/blog/guitar/活着1.png"/>
+<img src="/images/blog/guitar/活着2.png"/>
+<img src="/images/blog/guitar/活着3.png"/>
