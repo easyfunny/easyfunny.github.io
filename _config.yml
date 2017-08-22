@@ -89,7 +89,7 @@ comments_provider: gitment
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: easyfunny
+    username: 2thetopblog
 # https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: easyfunny
