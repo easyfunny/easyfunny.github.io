@@ -3,7 +3,7 @@ layout: post
 title: How did I create blog on github?
 
 categories: Blog
-description: 
+description: My first blog on github
 keywords: blog, github
 ---
 
