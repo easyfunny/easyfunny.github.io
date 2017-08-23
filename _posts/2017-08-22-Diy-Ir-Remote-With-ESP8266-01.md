@@ -16,9 +16,8 @@ ESP8266-01 is the cheapest and smallest MCU with Wifi module that I can afford w
 
 **Here are some pictures from the Internet:**
 
-![](https://cdn.instructables.com/FE9/58ZS/IJX7FON7/FE958ZSIJX7FON7.MEDIUM.jpg)![](https://cdn.sparkfun.com/assets/parts/1/1/1/2/9/13678-02.jpg)![](http://cordobo.com/wp-content/uploads/esp8266_pinout.png)
-
-##Step 1: Gather Your Materials.
+![](https://cdn.instructables.com/FE9/58ZS/IJX7FON7/FE958ZSIJX7FON7.MEDIUM.jpg)![](https://cdn.sparkfun.com/assets/parts/1/1/1/2/9/13678-02.jpg)
+## Step 1: Gather Your Materials.
 You will need the following:
 
 * ESP8266-01 Module.
@@ -32,13 +31,13 @@ You will need the following:
 * A breadboard.
 * A PCB board for programing(ESP8266-01 is not breadboard friendly).
 
-##Step 2: Scheme and Wiring
+## Step 2: Scheme and Wiring
 S8050, known as Q1 in the picture, plays a role like a switch that controls the LED1 to flash.
 
 ![](http://blog.2the.top/images/posts/8266ir/2.png)
 ![](http://blog.2the.top/images/posts/8266ir/1.png)
 
-##Step 3: Software
+## Step 3: Software
 The code is on my github. [ESP8266IRRemote](https://github.com/easyfunny/ESP8266_IR_Remote). I used some libraries, such as:
 
 * [WiFiManager](https://github.com/tzapu/WiFiManager), a magical wifi configuration tool.
@@ -58,24 +57,24 @@ The code is on my github. [ESP8266IRRemote](https://github.com/easyfunny/ESP8266
 ![ESP8266 WiFi Captive Portal Homepage](http://i.imgur.com/YPvW9eql.png) ![ESP8266 WiFi Captive Portal Configuration](http://i.imgur.com/oicWJ4gl.png)
 4. Find out IP address by follow command. For example, my IP address is _192.168.100.18_.
 ```shell
-__arp -a__ (for Windows, Linux and MacOS)
+arp -a (for Windows, Linux and MacOS)
 ``` 
 or 
 ```shell
-__ping ESP8266_IR.lan__ (For MacOS)
+ping ESP8266_IR.lan (For MacOS)
 ```
 
 5. If you are Windows, modify IP address to yours in file _/html/upload.html_. Save and open this file in your web browser. And upload all files(*success.html* should be the first one to upload) in _html_ dir __EXCEPT__ *upload.html* and *upload.sh*.
 ![](http://blog.2the.top/images/posts/8266ir/upload.html.jpg)
 6. If you are MacOS or Linux, modify IP address to yours in file _/html/upload.sh_. And run command in terminal
 ```shell
-__./upload.sh__
+./upload.sh
 ```
 7. Open browser on your phone and access *http://YOURIPADDRESS*. For example, *http://192.168.100.18* or *http://ESP8266_IR.lan*.
 ![](http://blog.2the.top/images/posts/8266ir/3.PNG)
 8. OK, it's working on my LeTV. 
 
-##Step 5: Learn your IR remote CODE.
+## Step 5: Learn your IR remote CODE.
 1. Press any button on your remote controller, toward to ESP8266.
 2. Open your web browser and access *http://YOURIPADDRESS/learn*. For example, *http://192.168.100.18/learn* or *http://ESP8266_IR.lan/learn*.
 3. You will find your **code**, **bits** and **protocal**.
