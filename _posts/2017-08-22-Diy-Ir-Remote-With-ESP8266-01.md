@@ -31,8 +31,11 @@ You will need the following:
 * A PCB board for programing(ESP8266-01 is not breadboard friendly).
 
 ## Step 2: Scheme and Wiring
+**ATTETION: YOU MUST USE 3.3V POWER SUPPLY! 5V WILL KILL YOUR DEVICE!**
+
 S8050, known as Q1 in the picture, plays a role like a switch that controls the LED1 to flash.
 <img src="http://blog.2the.top/images/posts/8266ir/2.png" width="50%"/><img src="http://blog.2the.top/images/posts/8266ir/1.png" width="50%"/>
+The red wire is VCC 3.3V while the black one is GND. The yellow, blue and green are signals.
 
 ## Step 3: Software
 The code is on my github. [ESP8266IRRemote](https://github.com/easyfunny/ESP8266_IR_Remote). I used some libraries, such as:
@@ -53,17 +56,20 @@ The code is on my github. [ESP8266IRRemote](https://github.com/easyfunny/ESP8266
 3. Connect your phone or laptop to SSID named *ESP8266_IR* with password *1234567890*. And follow the guide to connect your ESP8266 to your wifi router. It looks like:
 <img src="http://i.imgur.com/YPvW9eql.png" width="50%"/><img src="http://i.imgur.com/oicWJ4gl.png" width="50%"/>
 4. Find out IP address by follow command. For example, my IP address is _192.168.100.18_.
+For Windows, Linux and MacOS:
 ```shell
-arp -a (for Windows, Linux and MacOS)
+arp -a 
 ``` 
-or 
+OR for MacOS:
 ```shell
-ping ESP8266_IR.lan (For MacOS)
+ping ESP8266_IR.lan 
 ```
 
 5. If you are Windows, modify IP address to yours in file _/html/upload.html_. Save and open this file in your web browser. And upload all files(*success.html* should be the first one to upload) in _html_ dir __EXCEPT__ *upload.html* and *upload.sh*.
 ![](http://blog.2the.top/images/posts/8266ir/upload.html.jpg)
-6. If you are MacOS or Linux, modify IP address to yours in file _/html/upload.sh_. And run command in terminal
+6. If you are MacOS or Linux, modify IP address to yours in file _/html/upload.sh_. 
+![](http://blog.2the.top/images/posts/8266ir/upload.sh.jpg)
+And run command in terminal
 ```shell
 ./upload.sh
 ```
