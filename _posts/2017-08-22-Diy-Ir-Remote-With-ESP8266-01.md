@@ -79,7 +79,7 @@ And run command in terminal
 ```
 
 7. Open browser on your phone and access *http://YOURIPADDRESS*. For example, *http://192.168.100.18* or *http://ESP8266_IR.lan*.
-</br><img src="http://blog.2the.top/images/posts/8266ir/3.PNG" width="50%"/>
+![](http://blog.2the.top/images/posts/8266ir/3.PNG)
 
 8. OK, it's working on my LeTV. 
 
