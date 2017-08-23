@@ -15,8 +15,7 @@ ESP8266-01 is the cheapest and smallest MCU with Wifi module that I can afford w
 >The ESP8266 WiFi Module is a self contained SOC with integrated TCP/IP protocol stack that can give any microcontroller access to your WiFi network. The ESP8266 is capable of either hosting an application or offloading all Wi-Fi networking functions from another application processor. Each ESP8266 module comes pre-programmed with an AT command set firmware, meaning, you can simply hook this up to your Arduino device and get about as much WiFi-ability as a WiFi Shield offers (and that’s just out of the box)! The ESP8266 module is an extremely cost effective board with a huge, and ever growing, community.
 
 **Here are some pictures from the Internet:**
-
-![](https://cdn.instructables.com/FE9/58ZS/IJX7FON7/FE958ZSIJX7FON7.MEDIUM.jpg)![](https://cdn.sparkfun.com/assets/parts/1/1/1/2/9/13678-02.jpg)
+<img src="https://cdn.instructables.com/FE9/58ZS/IJX7FON7/FE958ZSIJX7FON7.MEDIUM.jpg" width="50%"/><img src="https://cdn.sparkfun.com/assets/parts/1/1/1/2/9/13678-02.jpg" width="50%"/>
 ## Step 1: Gather Your Materials.
 You will need the following:
 
@@ -33,9 +32,7 @@ You will need the following:
 
 ## Step 2: Scheme and Wiring
 S8050, known as Q1 in the picture, plays a role like a switch that controls the LED1 to flash.
-
-![](http://blog.2the.top/images/posts/8266ir/2.png)
-![](http://blog.2the.top/images/posts/8266ir/1.png)
+<img src="http://blog.2the.top/images/posts/8266ir/2.png" width="50%"/><img src="http://blog.2the.top/images/posts/8266ir/1.png" width="50%"/>
 
 ## Step 3: Software
 The code is on my github. [ESP8266IRRemote](https://github.com/easyfunny/ESP8266_IR_Remote). I used some libraries, such as:
@@ -54,7 +51,7 @@ The code is on my github. [ESP8266IRRemote](https://github.com/easyfunny/ESP8266
 ```
 2. Build and download to ESP8266 with serial cable.
 3. Connect your phone or laptop to SSID named *ESP8266_IR* with password *1234567890*. And follow the guide to connect your ESP8266 to your wifi router. It looks like:
-![ESP8266 WiFi Captive Portal Homepage](http://i.imgur.com/YPvW9eql.png) ![ESP8266 WiFi Captive Portal Configuration](http://i.imgur.com/oicWJ4gl.png)
+<img src="http://i.imgur.com/YPvW9eql.png" width="50%"/><img src="http://i.imgur.com/oicWJ4gl.png" width="50%"/>
 4. Find out IP address by follow command. For example, my IP address is _192.168.100.18_.
 ```shell
 arp -a (for Windows, Linux and MacOS)
@@ -71,7 +68,8 @@ ping ESP8266_IR.lan (For MacOS)
 ./upload.sh
 ```
 7. Open browser on your phone and access *http://YOURIPADDRESS*. For example, *http://192.168.100.18* or *http://ESP8266_IR.lan*.
-![](http://blog.2the.top/images/posts/8266ir/3.PNG)
+<img src="http://blog.2the.top/images/posts/8266ir/3.PNG" width="50%"/>
+
 8. OK, it's working on my LeTV. 
 
 ## Step 5: Learn your IR remote CODE.
