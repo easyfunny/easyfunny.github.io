@@ -68,7 +68,7 @@ arp -a
 ``` 
 OR for MacOS:
 ```shell
-ping ESP8266_IR.lan 
+ping ESP8266_IR.local 
 ```
 
 5. If you are Windows, modify IP address to yours in file _/html/upload.html_. Save and open this file in your web browser. And upload all files(*success.html* should be the first one to upload) in _html_ dir __EXCEPT__ *upload.html* and *upload.sh*.
@@ -81,14 +81,14 @@ And run command in terminal
 ./upload.sh
 ```
 
-7. Open browser on your phone and access *http://YOURIPADDRESS*. For example, *http://192.168.100.18* or *http://ESP8266_IR.lan*.
+7. Open browser on your phone and access *http://YOURIPADDRESS*. For example, *http://192.168.100.18* or *http://ESP8266_IR.local*.
 ![](http://blog.2the.top/images/posts/8266ir/3.PNG)
 
 8. OK, it's working on my LeTV. 
 
 ## Step 5: Learn your IR remote CODE.
 1. Press any button on your remote controller, toward to ESP8266.
-2. Open your web browser and access *http://YOURIPADDRESS/learn*. For example, *http://192.168.100.18/learn* or *http://ESP8266_IR.lan/learn*.
+2. Open your web browser and access *http://YOURIPADDRESS/learn*. For example, *http://192.168.100.18/learn* or *http://ESP8266_IR.local/learn*.
 3. You will find your **code**, **bits** and **protocal**.
 4. Modify *config.json* to your code.
 5. Upload *config.json* to your ESP8266.

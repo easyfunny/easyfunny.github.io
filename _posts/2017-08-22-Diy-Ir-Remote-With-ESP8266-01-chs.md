@@ -65,7 +65,7 @@ arp -a
 ``` 
 在MacOS下执行：
 ```shell
-ping ESP8266_IR.lan 
+ping ESP8266_IR.local 
 ```
 
 5. 如果是Windows系统, 修改 _/html/upload.html_ 中的IP地址，保存后用浏览器打开。 上传 _html_ 文件夹中的全部文件。先上传*success.html*， __不要上传__ *upload.html* 和 *upload.sh*。。
@@ -78,15 +78,16 @@ ping ESP8266_IR.lan
 ./upload.sh
 ```
 
-7. 打开浏览器访问 *http://YOURIPADDRESS*. 比如 *http://192.168.100.18* 或者 *http://ESP8266_IR.lan*.
+7. 打开浏览器访问 *http://YOURIPADDRESS*. 比如 *http://192.168.100.18* 或者 *http://ESP8266_IR.local*.
 ![](http://blog.2the.top/images/posts/8266ir/3.PNG)
 
 8. Duang，这是我的乐视电视的遥控器。
 
 ## 第 5 步: 改成你的遥控器码.
 1. 拿你自己的遥控器，冲着ESP8266按一个键。
-2. 打开浏览器，访问 *http://YOURIPADDRESS/learn*. 比如 *http://192.168.100.18/learn* 或者 *http://ESP8266_IR.lan/learn*。
+2. 打开浏览器，访问 *http://YOURIPADDRESS/learn*. 比如 *http://192.168.100.18/learn* 或者 *http://ESP8266_IR.local/learn*。
 3. json里有 **code**， **bits**， **protocal**。
 4. 修改 *config.json* 文件。
 5. 上传 *config.json* 文件。
 6. Duang。
+.local
