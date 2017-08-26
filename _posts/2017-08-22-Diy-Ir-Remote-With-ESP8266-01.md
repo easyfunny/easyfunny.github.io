@@ -51,14 +51,14 @@ The code is on my github. [ESP8266IRRemote](https://github.com/easyfunny/ESP8266
 * etc.
 
 ## Step 4: How to use
-1. Change the host name, SSID, and wifi password at line 425/426(maybe).
+1. Change the host name, SSID, and wifi password at line 471/472(maybe).
 ```cpp
-	WiFi.hostname("ESP8266_IR");
-	wifiManager.autoConnect("ESP8266_IR", "1234567890");
+  WiFi.hostname(HOSTNAME);
+  wifiManager.autoConnect(HOSTNAME, "1234567890");
 ```
 2. Build and download to ESP8266 with serial cable.
 
-3. Connect your phone or laptop to SSID named *ESP8266_IR* with password *1234567890*. And follow the guide to connect your ESP8266 to your wifi router. It looks like:
+3. Connect your phone or laptop to SSID named *esp8266-ir* with password *1234567890*. And follow the guide to connect your ESP8266 to your wifi router. It looks like:
 ![ESP8266 WiFi Captive Portal Homepage](http://i.imgur.com/YPvW9eql.png) ![ESP8266 WiFi Captive Portal Configuration](http://i.imgur.com/oicWJ4gl.png)
 
 4. Find out IP address by follow command. For example, my IP address is _192.168.100.18_.
@@ -68,7 +68,7 @@ arp -a
 ``` 
 OR for MacOS:
 ```shell
-ping ESP8266_IR.local 
+ping esp8266-ir.local 
 ```
 
 5. If you are Windows, modify IP address to yours in file _/html/upload.html_. Save and open this file in your web browser. And upload all files(*success.html* should be the first one to upload) in _html_ dir __EXCEPT__ *upload.html* and *upload.sh*.
@@ -81,14 +81,14 @@ And run command in terminal
 ./upload.sh
 ```
 
-7. Open browser on your phone and access *http://YOURIPADDRESS*. For example, *http://192.168.100.18* or *http://ESP8266_IR.local*.
+7. Open browser on your phone and access *http://YOURIPADDRESS*. For example, *http://192.168.100.18* or *http://esp8266-ir.local*.
 ![](http://blog.2the.top/images/posts/8266ir/3.PNG)
 
 8. OK, it's working on my LeTV. 
 
 ## Step 5: Learn your IR remote CODE.
 1. Press any button on your remote controller, toward to ESP8266.
-2. Open your web browser and access *http://YOURIPADDRESS/learn*. For example, *http://192.168.100.18/learn* or *http://ESP8266_IR.local/learn*.
+2. Open your web browser and access *http://YOURIPADDRESS/learn*. For example, *http://192.168.100.18/learn* or *http://esp8266-ir.local/learn*.
 3. You will find your **code**, **bits** and **protocal**.
 4. Modify *config.json* to your code.
 5. Upload *config.json* to your ESP8266.

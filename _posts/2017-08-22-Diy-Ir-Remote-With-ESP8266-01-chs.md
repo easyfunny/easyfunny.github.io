@@ -48,14 +48,14 @@ S8050，就是图中的Q1，用来控制红外发射管LED1的通断。
 * 等等
  
 ## 第 4 步: 使用说明
-1. 在文件425、426行，修改主机名，初始SSID和密码。
+1. 在文件471、472行，修改主机名，初始SSID和密码。
 ```cpp
-	WiFi.hostname("ESP8266_IR");
-	wifiManager.autoConnect("ESP8266_IR", "1234567890");
+  WiFi.hostname(HOSTNAME);
+  wifiManager.autoConnect(HOSTNAME, "1234567890");
 ```
 2. 编译，用串口线下载。
 
-3. 用手机或电脑连接到wifi，SSID 为 *ESP8266_IR* 密码 *1234567890*。然后根据下图连接到你的wifi路由器上：
+3. 用手机或电脑连接到wifi，SSID 为 *esp8266-ir* 密码 *1234567890*。然后根据下图连接到你的wifi路由器上：
 ![ESP8266 WiFi Captive Portal Homepage](http://i.imgur.com/YPvW9eql.png) ![ESP8266 WiFi Captive Portal Configuration](http://i.imgur.com/oicWJ4gl.png)
 
 4. 用各种方法找到你的IP地址. 比如我的是 _192.168.100.18_。
@@ -65,7 +65,7 @@ arp -a
 ``` 
 在MacOS下执行：
 ```shell
-ping ESP8266_IR.local 
+ping esp8266-ir.local 
 ```
 
 5. 如果是Windows系统, 修改 _/html/upload.html_ 中的IP地址，保存后用浏览器打开。 上传 _html_ 文件夹中的全部文件。先上传*success.html*， __不要上传__ *upload.html* 和 *upload.sh*。。
@@ -78,14 +78,14 @@ ping ESP8266_IR.local
 ./upload.sh
 ```
 
-7. 打开浏览器访问 *http://YOURIPADDRESS*. 比如 *http://192.168.100.18* 或者 *http://ESP8266_IR.local*.
+7. 打开浏览器访问 *http://YOURIPADDRESS*. 比如 *http://192.168.100.18* 或者 *http://esp8266-ir.local*.
 ![](http://blog.2the.top/images/posts/8266ir/3.PNG)
 
 8. Duang，这是我的乐视电视的遥控器。
 
 ## 第 5 步: 改成你的遥控器码.
 1. 拿你自己的遥控器，冲着ESP8266按一个键。
-2. 打开浏览器，访问 *http://YOURIPADDRESS/learn*. 比如 *http://192.168.100.18/learn* 或者 *http://ESP8266_IR.local/learn*。
+2. 打开浏览器，访问 *http://YOURIPADDRESS/learn*. 比如 *http://192.168.100.18/learn* 或者 *http://esp8266-ir.local/learn*。
 3. json里有 **code**， **bits**， **protocal**。
 4. 修改 *config.json* 文件。
 5. 上传 *config.json* 文件。
