@@ -16,10 +16,10 @@ keywords: Jenkins, Sonarqube, Android
   1. 进入Jenkins->配置
   2. 滚动到 **SonarQube servers**，点击**Add SonarQube**按钮
   3. 添加一个Server，如下：
-  	* Name输入Sonar
-  	* Server URL输入SonarQube的访问地址，如*http://192.168.1.240:9000*
-	* Server version 为 *5.3 or higher*
-	* Server authentication token 填写 SonarQube中自动生成的token
+    * Name输入Sonar
+    * Server URL输入SonarQube的访问地址，如*http://192.168.1.240:9000*
+    * Server version 为 *5.3 or higher*
+    * Server authentication token 填写 SonarQube中自动生成的token
   4. 点击保存
 
 # Step3. 新建一个Jenkins任务
