@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: 如何在Ubuntu 16.04上安装和配置OpenLDAP和phpLDAPadmin
@@ -6,6 +5,7 @@ categories: [ubuntu, OpenLDAP, phpLDAPadmin]
 description: 在本指南中，我们将讨论如何在Ubuntu 16.04上安装和配置OpenLDAP服务器。然后，我们将安装phpLDAPadmin，一个用于查看和操作LDAP信息的Web界面。我们将使用免费和自动化证书提供商Let's Encrypt来保护Web界面和LDAP服务的SSL证书。
 keywords: ubuntu, OpenLDAP, phpLDAPadmin
 ---
+
 # 如何在Ubuntu 16.04上安装和配置OpenLDAP和phpLDAPadmin
 
 > 在本指南中，我们将讨论如何在Ubuntu 16.04上安装和配置OpenLDAP服务器。然后，我们将安装phpLDAPadmin，一个用于查看和操作LDAP信息的Web界面。我们将使用免费和自动化证书提供商Let's Encrypt来保护Web界面和LDAP服务的SSL证书。

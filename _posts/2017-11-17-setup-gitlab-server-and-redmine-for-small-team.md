@@ -1,8 +1,9 @@
 ---
-title: "软件开发管理环境配置-中小团队"
-description: "Setup gitlab server and redmine for small team"
-category: "development"
-tags: [Project Management, Configuration Management, git, ]
+layout: post
+title: 软件开发管理环境配置-中小团队
+description: Setup gitlab server and redmine for small team
+categories: [development, redmine]
+keywords: Project Management, Configuration Management, git
 ---
 
 # 一.概述
